@@ -28,6 +28,97 @@
       </nav>
     </header>
     <main class="page">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="filters__form">
+          <div class="filters__box">
+            <fieldset class="filters__group">
+            <legend class="filters__title">Инфраструктура:</legend>
+            <ul class="filters__group-list">
+              <li class="filters__group-item">
+                <input id="filters-pool" type="checkbox" name="infrastructure" class="filters__input" value="pool" checked>
+                <label for="filters-pool" class="filters__label">Бассейн</label>
+              </li>
+              <li class="filters__group-item">
+                <input id="filters-parking" type="checkbox" name="infrastructure" class="filters__input" value="parking">
+                <label for="filters-parking" class="filters__label">Парковка</label>
+              </li>
+              <li class="filters__group-item">
+                <input id="filters-wifi" type="checkbox" name="infrastructure" class="filters__input" value="wifi">
+                <label for="filters-wifi" class="filters__label">Wi-Fi</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset class="filters__group">
+            <legend class="filters__title">Тип жилья:</legend>
+            <ul class="filters__group-list">
+              <li class="filters__group-item">
+                <input id="filters-hotel" type="checkbox" name="type-of-housing" class="filters__input" value="hotel" value="hotel" checked>
+                <label for="filters-hotel" class="filters__label">Гостиница</label>
+              </li>
+              <li class="filters__group-item">
+                <input id="filters-motel" type="checkbox" name="type-of-housing" class="filters__input" value="motel" value="motel" checked>
+                <label for="filters-motel" class="filters__label">Мотель</label>
+              </li>
+              <li class="filters__group-item">
+                <input id="filters-apartments" type="checkbox" name="type-of-housing" class="filters__input" value="apartments" value="apartments" checked>
+                <label for="filters-apartments" class="filters__label">Апартаменты</label>
+              </li>
+            </ul>
+            </fieldset>
+          </div>
+          <div class="filters__box">
+            <fieldset class="filters__group">
+              <legend class="filters__title">Стоимость в сутки (р):</legend>
+              <div class="filters__range">
+                <div class="price-controls">
+                  <label class="min-price">от
+                    <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">до
+                    <input type="text" name="max-price" value="30000">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle--min"></div>
+                  <div class="toggle toggle--max"></div>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="filters__button button">Показать</button>
+          </div>
+        </form>
+      </section>
+      <section class="sorting">
+        <div class="sorting__box">
+          <p class="sorting__found">Найдено: 3</p>
+          <h2 class="sorting__title">Сортировка:</h2>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a href="" class="sorting__link">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a href="" class="sorting__link">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a href="" class="sorting__link">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sorting__box">
+          <ul class="sorting__order-list">
+            <li class="sorting__order-item">
+              <a href="" class="sorting__order-link sorting__order-link--ascending"></a>
+            </li>
+            <li class="sorting__order-item">
+              <a href="" class="sorting__order-link sorting__order-link--descending"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="hotels">
         <ul class="hotels__list">
           <li class="hotels__item">
